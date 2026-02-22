@@ -15,3 +15,16 @@ int = 0
 creators_count:
 
 int = 0
+creators_count: int = 0
+
+resources_count: int = 0
+
+unknown_leads_count: int = 0
+
+total_leads: int = 0
+
+@app.get("/import/summary")
+
+def import_summary():
+
+return Summary().dict()
